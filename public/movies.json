@@ -1,0 +1,68 @@
+[
+  {
+    "id": 0,
+    "title": "The Shawshank Redemption",
+    "rate": 7,
+    "seen": true
+  },
+  {
+    "id": 1,
+    "title": "The Godfather",
+    "rate": 6,
+    "seen": false
+  },
+  {
+    "id": 2,
+    "title": "The Dark Knight",
+    "rate": 8,
+    "seen": false
+  },
+  {
+    "id": 3,
+    "title": "Pulp Fiction",
+    "rate": 9,
+    "seen": true
+  },
+  {
+    "id": 4,
+    "title": "Schindler's List",
+    "rate": 5,
+    "seen": false
+  },
+  {
+    "id": 5,
+    "title": "The Lord of the Rings",
+    "rate": 9,
+    "seen": true
+  },
+  {
+    "id": 6,
+    "title": "12 Angry Men",
+    "rate": 4,
+    "seen": false
+  },
+  {
+    "id": 7,
+    "title": "Fight Club",
+    "rate": 9,
+    "seen": false
+  },
+  {
+    "id": 8,
+    "title": "The Matrix",
+    "rate": 7,
+    "seen": false
+  },
+  {
+    "id": 9,
+    "title": "Goodfellas",
+    "rate": 4,
+    "seen": false
+  },
+  {
+    "id": 10,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "rate": 5,
+    "seen": false
+  }
+]
