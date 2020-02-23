@@ -8,12 +8,7 @@
   import Loading from "../../components/Loading.svelte";
   import movieStore from "../../store/movie-store";
 
-  let loading = true;
-
-  function getMovies() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve([
+  let moviesStub = [
           {
             id: 0,
             title: "The Shawshank Redemption",
@@ -26,7 +21,16 @@
             rate: 6,
             seen: false
           }
-        ]);
+        ];
+  let moviesState = [];
+
+  let loading = true;
+
+  function getMovies() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        moviesState = moviesStub;
+        resolve(moviesStub);
       }, 3000);
     });
   }
