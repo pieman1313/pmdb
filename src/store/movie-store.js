@@ -6,7 +6,7 @@ const movieStore = {
   subscribe: movies.subscribe,
 
   fetchMovies: () => {
-    return fetch("/allMovies.json")
+    return fetch("/movies.json")
       .then(response => {
         return response.json();
       })
@@ -37,6 +37,17 @@ const movieStore = {
       updatedMovies[movieIndex] = updatedMovie;
       return updatedMovies;
     });
+  },
+
+  performanceTest: (length = 1000)=>{
+    return Promise.resolve(movies.set(Array.apply(null, Array(length)).map((value, index)=>{
+      return {
+        id: index,
+        title: index,
+        rate: 7,
+        seen: false
+      }
+    })));
   }
 };
 
